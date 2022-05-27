@@ -1,0 +1,12 @@
+.container{
+  width: 100vw;
+  height: fit-content;
+  padding: 10px;
+  color: var(--Font-Color);
+  font-family: var(--Font-Roboto);
+  text-align: center;
+  background-color: var(--Color-Blue-Dark);
+  span{
+    color: lime;
+  }
+}

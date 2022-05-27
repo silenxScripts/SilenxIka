@@ -1,0 +1,509 @@
+.Container {
+  width: fit-content;
+  margin: 4rem auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  position: relative;
+  backdrop-filter: blur(5px);
+  background-color: rgb(23, 23, 36, 0.8);
+}
+
+.Links {
+  max-width: 30rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--Font-Color);
+  padding: 10px;
+  font-family: var(--Font-Roboto);
+
+  span {
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    background-color: var(--Color-Blue-Light);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(0, 82, 82);
+    }
+  }
+}
+
+.Second {
+  position: fixed;
+  top: 0;
+  transform: rotateX(180deg);
+  right: 0;
+}
+
+.Balloons {
+  display: flex;
+  position: fixed;
+  width: 200px;
+  height: fit-content;
+  bottom: 0;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  .Balls {
+    -webkit-box-shadow: 0px 0px 50px 5px rgba(187, 0, 70, 1);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(187, 0, 70, 1);
+    box-shadow: 0px 0px 50px 5px rgba(187, 0, 70, 1);
+  }
+
+  .Item {
+    width: 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    cursor: pointer;
+
+    &:hover .one {
+      transition: 0.3s;
+      height: 170px;
+    }
+
+    &:hover .two {
+      transition: 0.3s;
+      height: 350px;
+    }
+
+    &:hover .three {
+      transition: 0.3s;
+      height: 270px;
+    }
+  }
+
+  .One {
+    width: 50px;
+    height: 50px;
+    background-color: var(--Color-Red);
+    border-radius: 100px;
+  }
+
+  .one {
+    width: 2px;
+    height: 150px;
+  }
+
+  .Two {
+    width: 60px;
+    height: 60px;
+    background-color: var(--Color-Red);
+    border-radius: 100px;
+  }
+
+  .two {
+    width: 2px;
+    height: 300px;
+  }
+
+  .Three {
+    width: 40px;
+    height: 40px;
+    background-color: var(--Color-Red);
+    border-radius: 100px;
+  }
+
+  .three {
+    width: 2px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width:999px) {
+
+  .Balloons,
+  .Second {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:999px) {
+  .Links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:599px) {
+
+  .Head {
+    height: 400px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .Canvas {
+      max-width: 280px;
+    }
+
+    border-bottom: 3px solid var(--Color-Blue-Light);
+  }
+
+  .Info {
+    max-width: 30rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Font-Color);
+    padding: 10px;
+    font-family: var(--Font-Roboto);
+
+    h1 {
+      border: 1px solid var(--Font-Color);
+      padding: 5px;
+      text-align: center;
+      margin: 10px 0px;
+      border-radius: 10px;
+      background-color: var(--Color-Blue-Dark);
+    }
+
+  }
+
+  .Skills {
+    color: var(--Font-Color);
+    font-family: var(--Font-Roboto);
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 10px;
+
+    h1 {
+      border: 1px solid var(--Font-Color);
+      padding: 5px;
+      text-align: center;
+      margin: 10px 0px;
+      border-radius: 10px;
+      width: 100%;
+      background-color: var(--Color-Blue-Dark);
+    }
+
+    .Item {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0rem;
+
+      h3 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0rem;
+
+
+        li {
+          list-style: none;
+          background-color: var(--Color-Blue-Light);
+          width: 200px;
+          margin: 10px;
+          padding: 5px 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 10px;
+          transition: 0.3s;
+
+          img {
+            width: 40px;
+          }
+
+          &:hover {
+            background-color: rgb(0, 82, 82);
+            cursor: pointer;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .Reviews {
+    color: var(--Font-Color);
+    font-family: var(--Font-Roboto);
+    padding: 10px;
+    max-width: 30rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      border: 1px solid var(--Font-Color);
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+      margin: 10px 0px;
+      border-radius: 10px;
+      background-color: var(--Color-Blue-Dark);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      text-decoration: none;
+      width: 250px;
+      overflow: hidden;
+      margin: 2rem 0rem;
+      background-color: var(--Color-Blue-Light);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 10px 0px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      a {
+        color: var(--Font-Color);
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: var(--Color-Blue-Dark);
+
+        &:hover {
+          background-color: rgb(0, 82, 82);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:599px) {
+
+  .Head {
+
+    height: 400px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .Canvas {
+      width: 30rem;
+    }
+
+    border-bottom: 3px solid var(--Color-Blue-Light);
+
+  }
+
+  .Info {
+    max-width: 30rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Font-Color);
+    padding: 10px;
+    font-family: var(--Font-Roboto);
+
+    h1 {
+      border: 1px solid var(--Font-Color);
+      padding: 5px;
+      text-align: center;
+      margin: 10px 0px;
+      border-radius: 10px;
+      background-color: var(--Color-Blue-Dark);
+    }
+
+  }
+
+  .Skills {
+    color: var(--Font-Color);
+    font-family: var(--Font-Roboto);
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 10px;
+
+    h1 {
+      border: 1px solid var(--Font-Color);
+      padding: 5px;
+      text-align: center;
+      margin: 10px 0px;
+      border-radius: 10px;
+      width: 100%;
+      background-color: var(--Color-Blue-Dark);
+    }
+
+    .Item {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0rem;
+
+      h3 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0rem;
+
+
+        li {
+          list-style: none;
+          background-color: var(--Color-Blue-Light);
+          width: 200px;
+          margin: 10px;
+          padding: 5px 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 10px;
+          transition: 0.3s;
+
+          img {
+            width: 40px;
+          }
+
+          &:hover {
+            background-color: rgb(0, 82, 82);
+            cursor: pointer;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .Reviews {
+    color: var(--Font-Color);
+    font-family: var(--Font-Roboto);
+    padding: 10px;
+    max-width: 30rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      border: 1px solid var(--Font-Color);
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+      margin: 10px 0px;
+      border-radius: 10px;
+      background-color: var(--Color-Blue-Dark);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      text-decoration: none;
+      // width: 260px;
+      max-width: 90%;
+      overflow: hidden;
+      margin: 2rem 0rem;
+      background-color: var(--Color-Blue-Light);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 10px 0px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      a {
+        color: var(--Font-Color);
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: var(--Color-Blue-Dark);
+
+        &:hover {
+          background-color: rgb(0, 82, 82);
+        }
+      }
+    }
+  }
+}

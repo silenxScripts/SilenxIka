@@ -1,0 +1,44 @@
+.Container{
+  margin: 4rem 0rem;
+  width: 95%;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  min-height: 80vh;
+  backdrop-filter: blur(5px);
+  background-color: rgb(23, 23, 36, 0.8);
+  padding: 10px;
+  max-height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--Font-Color);
+  font-family: var(--Font-Roboto);
+
+  .Box{
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--Color-Blue-Light);
+    margin: 5px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    cursor: pointer;
+
+    h1{
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 0.9rem;
+      margin: 10px 0px;
+    }
+    h3{
+      display: inline-block;
+      background-color: var(--Color-Blue-Dark);
+      padding: 5px;
+      border-radius: 3px;
+    }
+  }
+}
