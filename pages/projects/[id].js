@@ -13,10 +13,10 @@ const ID = ()=> {
   return(
     <>
     <div className={s.Container}>
-      <img src={item.img}/>
-      <h1>{item.title}</h1>
-      <p>{item.fullDesc}</p>
-      <a href={item.link} target='_blank' rel='noreferrer'>Check it out!</a>
+      <img src={item?.img}/>
+      <h1>{item?.title}</h1>
+      <p>{item?.fullDesc}</p>
+      <a href={item?.link} target='_blank' rel='noreferrer'>Check it out!</a>
       <a
         onClick={()=>{
           router.back()
