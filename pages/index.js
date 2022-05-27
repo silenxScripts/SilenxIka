@@ -91,7 +91,7 @@ const Home = () => {
                   <img src={value.img} />
                   <h4>{value.name}</h4>
                   <p>"{value.msg}"</p>
-                  <a href={value.link} target={'_blank'}>Check this out!</a>
+                  <a href={value.link} target={'_blank'} rel={'noreferrer'}>Check this out!</a>
                 </li>
               ))
             }
