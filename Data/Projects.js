@@ -19,7 +19,7 @@ export const Data = [
     title:"Leise-Chat App",
     img:'https://cdn.discordapp.com/attachments/922144251314339890/979758878084431872/Leise-ChatApp.png',
     desc:"Chatting simplified!",
-    fullDesc:"Leise chat app is a free to use chat app, now you can't share pictures and videos using it as we lack an actual database due to lack of funds. Your email and password are absolutely safe being saved to google's database which SilenxIka has no access to! Chat safe with your loved one's for free and guess what? It works like a charm on both PC and Mobile without even downloading anything! straight on your browser, use Leise-Chat be simplified!"
+    fullDesc:"Leise chat app is a free to use chat app, secured with google authorization. Simple to use UI and no unrelated stuff at all! And guess what? it can be used on PC IOS Android without downloading anything at all. It currently is on version 1.0.0 and doesn't have option to share pictures and videos, they will be added as soon as possible"
   },
   {
     type:'Applications',

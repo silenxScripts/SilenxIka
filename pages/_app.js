@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="background">
+      {/* <div className="background">
         <span></span>
         <span></span>
         <span></span>
@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> */}
       <Navbar />
       <Component {...pageProps} />
       <Footer />
